@@ -1,26 +1,28 @@
 {
   "expo": {
     "name": "ColorCatalog",
+    "description": "Catalog colors: save your favorite web colors and see the details.",
     "slug": "ColorCatalog",
+    "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/cc-icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/cc-splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jinsley8.color-catalog",
+      "buildNumber": "1.0.0"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "android": {
+      "package": "com.jinsley8.colorcatalog"
     }
   }
 }
