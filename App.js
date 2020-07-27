@@ -13,10 +13,15 @@ export default function App() {
 
 const styles = StyleSheet.create({
   page: {
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "space-between",
+    alignItems: "flex-start",
     marginTop: 40,
     backgroundColor: "#DDD",
   },
   text: {
+    textAlign: "center",
     fontSize: 22,
     color: "red",
     backgroundColor: "yellow",
@@ -24,6 +29,7 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   selectedText: {
+    alignSelf: "flex-end",
     color: "yellow",
     backgroundColor: "red",
   },
