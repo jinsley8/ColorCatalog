@@ -1,25 +1,29 @@
 import React, { useState } from "react";
 import { FlatList, StyleSheet } from "react-native";
 import ColorButton from "./components/ColorButton";
+import ColorForm from "./components/ColorForm";
 import defaultColors from "./data/defaultColors.json";
 
 export default function App() {
   const [backgroundColor, setBackgroundColor] = useState("blue");
 
   return (
-    <FlatList
-      style={[styles.container, { backgroundColor }]}
-      data={defaultColors}
-      renderItem={({ item }) => {
-        return (
-          <ColorButton
-            key={item.id}
-            backgroundColor={item.color}
-            onPress={setBackgroundColor}
-          />
-        );
-      }}
-    />
+    <>
+      <ColorForm/>
+      <FlatList
+        style={[styles.container, { backgroundColor }]}
+        data={defaultColors}
+        renderItem={({ item }) => {
+          return (
+            <ColorButton
+              key={item.id}
+              backgroundColor={item.color}
+              onPress={setBackgroundColor}
+            />
+          );
+        }}
+        />
+    </>
   );
 }
 
