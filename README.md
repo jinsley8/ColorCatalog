@@ -1,8 +1,8 @@
 # ColorCatalog
 
-Practice project from Lynda course - Learning React Native (2020).
+Catalog colors: save your favorite web colors and see the details.
 
-https://www.lynda.com/React-js-tutorials/Learning-React-Native/2833016-2.html
+React Native practice project.
 
 ## Install the Dependencies
 
